@@ -178,8 +178,8 @@ func (c Controller) CreateAgents(db *mongo.Client) http.HandlerFunc {
 		s, err := session.NewSession(&aws.Config{
 			Region: aws.String("us-east-1"),
 			Credentials: credentials.NewStaticCredentials(
-				"AKIAVIVVIRG7WZMLRODH",                     // id
-				"4Jn+0LWXZ8AhI+RFHE6c2EimBSDn0EqVKBbAy2qd", // secret
+				"AWS-ID",                     // id
+				"AWS-SECRET", // secret
 				""), // token can be left blank for now
 		})
 		if err != nil {
